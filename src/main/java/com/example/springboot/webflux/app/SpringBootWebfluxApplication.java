@@ -40,6 +40,9 @@ public class SpringBootWebfluxApplication implements CommandLineRunner {
             new Producto("Sony notebook", 846.95),
             new Producto("Hewlett PAckard Multifuncional", 178.95),
             new Producto("Sony camara Digital HD", 178.95),
+            new Producto("Mica comoda 5 cajones", 150.95),
+            new Producto("HP notebook Omen 17", 2500.95),
+            new Producto("Sony Bravia OLED 4K Utra HD", 2255.95),
             new Producto("Bianchi Bicicleta", 70.95))
             .flatMap(producto -> {
               producto.setCreateAt(new Date());
