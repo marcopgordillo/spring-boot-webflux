@@ -17,6 +17,34 @@ public class Producto {
 
   private Date createAt;
 
+  public Producto() {}
+
+  public Producto(String nombre, Double precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+  }
+
+  public static class Builder {
+    private String nombre;
+    private Double precio;
+
+    public Builder() {}
+
+    public Builder setNombre(String nombre) {
+      this.nombre = nombre;
+      return this;
+    }
+
+    public Builder setPrecio(Double precio) {
+      this.precio = precio;
+      return this;
+    }
+
+    public Producto build() {
+      return new Producto(nombre, precio);
+    }
+  }
+
   public String getId() {
     return id;
   }
