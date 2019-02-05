@@ -5,3 +5,4 @@ spring:
   thymeleaf:
     reactive:
       max-chunk-size: 1024
+      chunked-mode-view-names: listar-chunked
